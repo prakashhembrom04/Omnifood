@@ -71,28 +71,38 @@ table {
 .logo {
         height: 1.2rem;
     animation: fadeInScale 0.8s ease-out;
-    margin-left: -180px;
-    height: 30px;
+    margin-left: -160px;
+    height: 80px;
 }
 
 @media (max-width: 768px) {
     .logo {
-        margin-left: -300px;
-        height: 15px;
+        margin-left: -350px;
+        height: 55px;
     }
 }
 
     
-@media (max-width: 426px) {
+@media (max-width: 425px) {
     .logo {
         margin-left: -150px;
-        height: 15px;
+        height: 55px;
+        margin-top: 30;
     }
 
    @media (max-width: 375px) {
     .logo {
         margin-left: -120px;
-        height: 15px;
+        height: 55px;
+    }
+
+    
+
+    @media (max-width: 320px) {
+        .logo {
+            margin-right: -60px;
+            height: 55px;
+        }
     }
    } 
 }

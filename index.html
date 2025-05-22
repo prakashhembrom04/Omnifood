@@ -36,14 +36,14 @@
   <!-- Main JavaScript -->
   <script defer src="script.js"></script>
 
-  <title>OmniFood &mdash; Never cook again!</title>
+  <title>GoodFood &mdash; Never cook again!</title>
 </head>
 
 <body>
 <header class="header">
   <a href="img/omnifood-logo.png"  class="logo-link">
     <a href="#logo2">
-    <img class="logo" id="logo1" alt="Omnifood logo" src="img/omnifood-logo copy.png">
+    <img class="logo" id="logo1" alt="Omnifood logo" src="img/image copy 16.png">
   </a>
   </a>
 
@@ -123,7 +123,7 @@
       <p class="step-number">01</p>
       <h3 class="heading-tertiary">Tell us what you like (and what not)</h3>
       <p class="step-description">
-        Never again waste time thinking about what to eat! Omnifood will ask you a few simple questions about your dietary preferences and then create a meal plan just for you.
+        Never again waste time thinking about what to eat! Goodfood will ask you a few simple questions about your dietary preferences and then create a meal plan just for you.
       </p>
     </div>
     <div class="step-img-box">
@@ -134,7 +134,7 @@
       <p class="step-number">02</p>
       <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
       <p class="step-description">
-        Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add recipes.
+        Once per week, approve the meal plan generated for you by Goodfood AI. You can change ingredients, swap entire meals, or even add recipes.
       </p>
     </div>
     <div class="step-img-box">
@@ -154,14 +154,10 @@
   </div>
 </section>
 
-
-
-
-
     <section class="section-meals" id="meals">
         <div class="container center-text">
             <span class="subheading">Meals</span>
-            <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes
+            <h2 class="heading-secondary">Goodfood AI chooses from 5,000+ recipes
             </h2>
         </div>
 
@@ -268,7 +264,7 @@
           <div class="testimonial-content">
             <blockquote class="testimonial-text">
                 <h1>Prakash</h1>
-                <p>Great experience Omni food easy ordering, fast delivery, delicious food, user-friendly app, and excellent customer service.</p></blockquote>
+                <p>Great experience Good--food easy ordering, fast delivery, delicious food, user-friendly app, and excellent customer service.</p></blockquote>
             </blockquote>
             <p class="testimonial-name">— Prakash hembrom</p>
           </div>
@@ -479,46 +475,67 @@
         <p class="cta-text">
           Healthy, tasty, and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!
         </p>
-        <form class="cta-form" action="/submit" method="POST">
-          <div>
-            <label for="full-name">Full Name</label>
-            <input
-              id="full-name"
-              type="text"
-              placeholder="John Smith"
-              required
-              aria-describedby="full-name-error"
-            />
-            <span id="full-name-error" class="error-message" hidden>Please enter your full name.</span>
-          </div>
+  <form class="cta-form" action="https://api.web3forms.com/submit" method="POST">
+  <!-- Required Web3Forms access key -->
+  <input type="hidden" name="access_key" value="0ded9038-691e-4af6-9efc-198841ac02d8" />
 
-          <div>
-            <label for="email">Email Address</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="me@example.com"
-              required
-              aria-describedby="email-error"
-            />
-            <span id="email-error" class="error-message" hidden>Please enter a valid email address.</span>
-          </div>
+  <!-- Full Name -->
+  <div>
+    <label for="full-name">Full Name</label>
+    <input
+      id="full-name"
+      type="text"
+      name="name"
+      placeholder="Prakash Hembrom"
+      required
+      aria-describedby="full-name-error"
+    />
+    <span id="full-name-error" class="error-message" hidden>Please enter your full name.</span>
+  </div>
 
-          <div>
-            <label for="select-where">Where did you hear from us?</label>
-            <select id="select-where" required aria-describedby="select-where-error">
-              <option value="">Please choose one option:</option>
-              <option value="friends">Friends and Family</option>
-              <option value="youtube">YouTube Video</option>
-              <option value="podcast">Podcast</option>
-              <option value="facebook-ad">Facebook Ad</option>
-              <option value="others">Others</option>
-            </select>
-            <span id="select-where-error" class="error-message" hidden>Please select an option.</span>
-          </div>
+  <!-- Email -->
+  <div>
+    <label for="email">Email Address</label>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      placeholder="me@example.com"
+      required
+      aria-describedby="email-error"
+    />
+    <span id="email-error" class="error-message" hidden>Please enter a valid email address.</span>
+  </div>
 
-          <button type="submit" class="btn btn--form">Sign up now</button>
-        </form>
+  <!-- Source -->
+  <div>
+    <label for="select-where">Where did you hear from us?</label>
+    <select
+      id="select-where"
+      name="referral_source"
+      required
+      aria-describedby="select-where-error"
+    >
+      <option value="">Please choose one option:</option>
+      <option value="friends">Friends and Family</option>
+      <option value="youtube">YouTube Video</option>
+      <option value="podcast">Podcast</option>
+      <option value="facebook-ad">Facebook Ad</option>
+      <option value="others">Others</option>
+    </select>
+    <span id="select-where-error" class="error-message" hidden>Please select an option.</span>
+  </div>
+
+  <!-- Optional: Success redirect -->
+  <!-- <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you.html"> -->
+
+  <!-- Optional: Honeypot field to prevent spam -->
+  <input type="checkbox" name="botcheck" class="hidden" style="display:none;" />
+
+  <!-- Submit -->
+  <button type="submit" class="btn btn--form">Sign up now</button>
+</form>
+
       </div>
       <div
         class="cta-img-box"
@@ -533,7 +550,7 @@
 <footer class="footer">
     <div class="container grid grid--footer">
         <div class="logo-col"><a href="#logo1" class="footer-logo">
-            <img class="logo" id="logo2" alt="Omnifood logo" src="img/omnifood-logo copy.png" />
+            <img class="logo" id="logo2" alt="Omnifood logo" src="img/image copy 15.png" />
         </a>
 
         <ul class="social-links">
@@ -548,7 +565,7 @@
                         </a></li>
         </ul>
 
-        <p class="copyright">Copyright &copy; <span class="year">2027 </span> by Omnifood, Inc All right reserved.</p>
+        <p class="copyright">Copyright &copy; <span class="year">2027 </span> by Goodfood, Inc All right reserved.</p>
 
 
         </div>
