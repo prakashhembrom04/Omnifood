@@ -1,5 +1,5 @@
 /* Reset and Base Styles */
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Znamenny+Musical+Notation&display=swap');
 *{ 
     margin: 0;
     padding: 0;
@@ -1671,4 +1671,11 @@ table {
 
 #logo2{
     margin-left: 20px;
+}
+
+.testimonial-text p{
+      font-family: "Noto Znamenny Musical Notation", sans-serif;
+        font-weight: 400;
+  font-style: normal;
+    text-align: left;
 }
